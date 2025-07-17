@@ -35,3 +35,5 @@ let avg = numbers.reduce((total, val) => total + val, 0) / numbers.length
 
 const findIndexes = (arr, num)  =>
     arr.reduce((indexes, el, index) => (el === num) ? [...indexes, index] : indexes, [])
+
+const user = users.find(user => user.email === 'andrew@gmail.com')
